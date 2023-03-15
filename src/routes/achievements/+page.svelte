@@ -2,6 +2,6 @@
 
 <ul>
   <li> 
-    <h2><a href="/todos">Achievements</a></h2>
+    <h2><a href="./achievements/todos">Achievement 16 - Todos-List</a></h2>
   </li>
 </ul>
