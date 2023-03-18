@@ -1,29 +1,21 @@
 <h1>Achievement 17</h1>
 
 <script>
-    import { browser } from '$app/environment'
+  import { browser } from '$app/environment'
 
-    let billTotal = prompt('How much is your bill total?');
-    let Total = '';
-    // const tipAmount = calculateTip(billTotal1)
-  
-    const keydownEnter = function(tipRate = 0.20) {
-     return billTotal * tipRate;
-    
+  let number = prompt("What's your favourite number?");
 
-  //  return `${tipPercentage} tip on ${billTotal} is ${tip}`;
+const handleClick = function(){
+  return number++;
+  console.log(number);
 
-  }
-//   
-//   const tipAmount = calculateTip(billTotal1)
-// // console.log(`${tipPercentage} tip on ${billTotal1} is ${tip}.`);
-//   console.log(tipAmount);
+}
 
 </script>
-
-<div on:keydown={keydownEnter}>
-<label for="text-input">How much would you like to tip?</label>: 
-<input type="text" id="text-input">
-<p>Your total is {Total}</p>
+<div on:click={handleClick}>
+  <h3>Your Favourite Number</h3>
+  <button>Click on the Button to add one number</button>
+  <h1>{number}</h1>
 </div>
+
 
